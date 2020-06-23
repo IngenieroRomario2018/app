@@ -1,0 +1,325 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(-10deg, #C6FFDD, #FBD786, #f7797d) fixed;
+    font-family: 'Sriracha', cursive;
+
+
+}
+
+.des {
+    margin: -5%;
+}
+
+.intro {
+    color: white;
+}
+
+.sign {
+    background-color: white;
+    width: 250px;
+    height: 320px;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+    margin: auto;
+    top: 40px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+input {
+    display: inline-block;
+    margin: 8px;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    text-align: center;
+    font-family: 'Sriracha', cursive;
+}
+
+.user {
+    display: none;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.submit {
+    display: none;
+    position: relative;
+    text-align: center;
+    top: 320px;
+    float: right;
+    border: 2px solid black;
+
+}
+
+.sub {
+    color: white;
+    background-color: maroon;
+    height: 10%;
+    width: 60%;
+    font-family: 'Sriracha', cursive;
+}
+
+.sub:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btns {
+    text-align: center;
+    display: none;
+}
+
+.btns>button {
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    width: 130px;
+    height: 40px;
+    margin: 6px;
+    background-color: white;
+    border: none;
+
+}
+
+button:hover {
+    cursor: pointer;
+
+}
+
+button:focus {
+    outline: none;
+
+}
+
+.welc,
+.welc2 {
+    text-align: center;
+    color: white;
+}
+
+.loc {
+    position: relative;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 90px;
+    right: 0;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.btnp3 {
+    display: none;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    top: 220px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+.pimg,
+.postimg,
+.title,
+.des2,
+.decide,
+.user {
+    display: none;
+}
+
+.post1 {
+    display: none;
+}
+
+img {
+    width: 400px;
+}
+
+.header {
+    display: none;
+    background-color: pink;
+    width: 100%;
+    height: 10%;
+
+}
+
+.header>a {
+    margin: 23px;
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.profile,
+.private {
+    display: none;
+}
+
+.status,
+.cmnt,
+.cmnt2,
+.cmnt3,
+.cmnt4 {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid pink;
+    outline: none;
+
+}
+
+.psub,
+.csub,
+.csub2,
+.csub3,
+.csub4 {
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+#u1,
+#u2 {
+    position: relative;
+    top: 70px;
+}
+
+.t1,
+.t2,
+.t3,
+.t4 {
+    position: relative;
+    left: 35px;
+    white-space: nowrap;
+}
+
+.i,
+.g,
+.like,
+.like-2,
+.like-3,
+.like-4 {
+    font-weight: bold;
+    border: none;
+    background: none;
+    margin: 5px;
+}
+
+.i {
+    color: red;
+}
+
+.g {
+    color: green;
+}
+
+.like:hover {
+    color: blue;
+}
+
+.like:active {
+    color: blue;
+}
+
+.post2,
+.post3 {
+    display: none;
+}
+
+.pstatus {
+    position: relative;
+    left: 100px;
+    bottom: 80px;
+}
+
+.psub {
+    position: relative;
+    left: 200px;
+    bottom: 50px;
+}
+
+.newevent {
+    display: none;
+    position: relative;
+    margin: auto;
+    top: 40px;
+    bottom: 0;
+    left: 160px;
+    right: 0;
+}
+
+.newevent:hover {
+    cursor: pointer;
+}
+
+.card {
+    background-color: black;
+    width: 350px;
+    height: 200px;
+    z-index: 1;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.description {
+    position: relative;
+    left: 100px;
+    top: 50px;
+}
+
+.eventsub {
+    position: relative;
+    top: 80px;
+    left: 50px;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.title {
+    display: block;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid pink;
+    outline: none;
+    position: relative;
+    left: 95px;
+    top: 25px;
+
+}
+
+.description {
+    position: relative;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid pink;
+    outline: none;
+}
+
+.event-title {
+    position: relative;
+    left: 40px;
+    bottom: 60px;
+}
+
+.event-des {
+    position: relative;
+    bottom: 100px;
+}

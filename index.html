@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Socialy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
+
+<body>
+
+    <!--First page-->
+    <div class="intro">
+        <h1 align="center" class="title-1">Welcome to Socialy</h1>
+        <p class="des" align="center">Find socials and events near you</p>
+    </div>
+    <!--Sign up form-->
+    <div class="sign">
+
+        <h3 align="center">Sign up</h3>
+
+        <input type="text" placeholder="First name" class="fn">
+        <input type="text" placeholder="Last name" class="ln">
+        <input type="email" placeholder="Email" class="email">
+        <input type="password" placeholder="Enter your password" class="pass">
+        <input type="submit" class="sub" align="right" onclick="page2(); ">
+
+
+
+    </div>
+    <!--Page two-->
+    <div class="btns">
+        <button class="btn1" onclick=select();>Entertainment</button>
+        <button class="btn2" onclick=select2();>Tech</button>
+        <button class="btn3" onclick=select3();>Food</button>
+        <button class="btn4" onclick=select4();>Volunteering</button>
+        <button class="btn5" onclick=select5();>animals</button>
+        <button class="btn6" onclick=select6();>community</button>
+        <button class="btn7" onclick=select7();>fashion</button>
+        <button class="btn8" onclick=select8();>Gaming</button>
+    </div>
+    <button class="submit" onclick=page3();>Next</button>
+    <!--page 3-->
+    <div class="user"><i class="fas fa-user fa-5x"></i></div>
+    <button class="btnp3" onclick=page4()>Explore</button>
+    <!--page four-->
+    <div class="header">
+        <a href="#" onclick="collect();">Your events</a>
+        <a href="#" onclick="local();">Local</a>
+
+        <a href="#" onclick="priv();">Private</a>
+    </div>
+    <div class="profile">
+        <i class="fas fa-user-circle fa-4x" id="pimg"></i>
+
+
+        <textarea name="status" cols="20" rows="4" maxlength="200" placeholder="Enter your status"
+            class="status"></textarea>
+        <p class="pstatus"></p>
+
+
+        <button class="psub" onclick=status();>post</button>
+    </div>
+    <h3 class="newevent" onclick=addEvent();>Add Event</h3>
+    <button class="eventsub" onclick="collect(); goaway();"></button>
+    <div class="post1">
+        <i class="fas fa-user-circle fa-2x" id="u1">
+
+        </i>
+
+        <h1 class="t1">Karachi Food Festival</h1>
+
+        <p class="d1">Taste of pakistan is coming near you. Join us on Friday
+            for the biggest pakistani khana ever. Everyone is invited for the grand banquet. </p>
+
+        <img src="https://i.ibb.co/W6CMY0w/desi-food.jpg" class="i1">
+        <p class="locdate"></p>
+        <button class="i" onclick=decide();>Interested</button>
+        <button class="g" onclick=decide2();>Going</button><button class="like" onclick="like();"><i
+                class="fas fa-thumbs-up fa-2x"></i></button>
+        <br />
+        <h4 class="reply"></h4>
+        <textarea name="comment" cols="20" rows="4" class="cmnt" placeholder="Post a comment"></textarea>
+
+        <button class="csub" onclick=reply();>Submit comment</button>
+
+    </div>
+    <div class="post2">
+        <i class="fas fa-user-circle fa-2x" id="u2">
+
+        </i>
+
+        <h1 class="t2">SPA programming Meetup</h1>
+
+        <p class="d2">Join us for the biggest SPA Programming Meetup of 2020. SPA, Student programming association, is
+            proudly hosting a grand banquet for all members to discuss the associations mid-year plans for 2021. Please
+            join us at the listed time below. </p>
+
+        <img src="https://i.ibb.co/CmwLrCh/socialy.png" class="i2">
+        <p class="locdate2"></p>
+        <button class="i" onclick=decide();>Interested</button>
+        <button class="g" onclick=decide2();>Going</button><button class="like-2" onclick="like2();"><i
+                class="fas fa-thumbs-up fa-2x"></i></button>
+        <br />
+        <h4 class="reply2"></h4>
+        <textarea name="comment" cols="20" rows="4" class="cmnt2" placeholder="Post a comment"></textarea>
+
+        <button class="csub2" onclick="reply2();">Submit comment</button>
+
+    </div>
+    <div class="post3">
+        <i class="fas fa-user-circle fa-2x" id="u1">
+
+        </i>
+
+        <h1 class="t3">Pakistani Drama MASHUP 2020</h1>
+
+        <p class="d3">Get ready for the biggest pakistani drama mashup of the year! We will be hosting recently ended as
+            well as on air dramas from 2019 - 2020. We'll be playing your favorites like Jo tu chahey, Yeh dil mera,
+            deewangi, and thora sa haq. Special appearances by Imran abbas, Ayeza khan, Sajal aly, and raeed alam. </p>
+
+        <img src="https://i.ibb.co/XksVkSC/Best-Pakistani-Dramas-2020.jpg" class="i3">
+        <p class="locdate3"></p>
+        <button class="i" onclick=decide();>Interested</button>
+        <button class="g" onclick=decide2();>Going</button>
+        <button class="like-3" onclick="like3();"><i class="fas fa-thumbs-up fa-2x"></i></button>
+        <br />
+        <h4 class="reply3"></h4>
+        <textarea name="comment" cols="20" rows="4" class="cmnt3" placeholder="Post a comment"></textarea>
+
+        <button class="csub3" onclick="reply3();">Submit comment</button>
+
+    </div>
+    <div class="private">
+        <i class="fas fa-user-circle fa-2x" id="u1">
+
+        </i>
+
+        <h1 class="t4">Hira's Coding Bash</h1>
+
+        <p class="d3">We all know programming rules. Join me for programming madness with coding challenges, trivia, and
+            more. Lucky if you are invited btw </p>
+
+        <img src="https://i.ibb.co/tKbm3xx/photo-1513151233558-d860c5398176-ixlib-rb-1-2.jpg" class="i4">
+        <p class="locdate4"></p>
+        <button class="i" onclick=decide();>Interested</button>
+        <button class="g" onclick=decide2();>Going</button>
+        <button class="like-4" onclick="like4();"><i class="fas fa-thumbs-up fa-2x"></i></button>
+        <br />
+        <h4 class="reply4"></h4>
+        <textarea name="comment" cols="20" rows="4" class="cmnt4"></textarea>
+        <p class="likecount" placeholder="Post a comment"></p>
+        <button class="csub4" onclick="reply4();">Submit comment</button>
+    </div>
+</body>
+
+</html>
